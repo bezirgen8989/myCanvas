@@ -220,7 +220,7 @@ function div3(){
         }
     }
 
-    paper3.addEventListener('click', function(){
+    paper3.addEventListener('mousemove', function(){
         xx-=1;
         console.log(xx)
         ctx3.clearRect(0,0, canvas3.width, canvas3.height);
