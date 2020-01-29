@@ -208,11 +208,9 @@ function div3(){
         ctx3.fillStyle = color;
         ctx3.fillRect (x,y,w,h);
     }
-
-    
+   
     let xx=20;
-    let colorCode = 1000;
-    let myColor = '#F'+colorCode;
+    let myColor = 'black';
     function allRect (){
         requestAnimationFrame(allRect);
         for (let i = 0; i<61;i++){
@@ -222,9 +220,15 @@ function div3(){
         }
     }
 
-    
+    paper3.addEventListener('click', function(){
+        xx-=1;
+        console.log(xx)
+        ctx3.clearRect(0,0, canvas3.width, canvas3.height);
+        if (xx==0){
+            xx=20;
+        }
+         
+    })
     allRect ();
-
-    
 }
 div3();
